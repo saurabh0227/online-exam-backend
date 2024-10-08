@@ -1,0 +1,35 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Typescript output
+dist/
+out/
+
+# Uploads folder for image files
+uploads/
+
+# IDE settings
+.vscode/
+.idea/
+
+# MacOS files
+.DS_Store
+
+# Docker files
+docker-compose.override.yml
+
+# Optional npm cache directory
+.npm
+
+# Other config files
+*.local
