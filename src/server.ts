@@ -22,7 +22,7 @@ const checkAndCreateUploadsDir = () => {
 // Test database connection and initialize questions on startup
 (async () => {
   await testDBConnection();
-  await questionService.initializeQuestions(); // Initialize questions here
+  await questionService.initializeQuestions(); // Initialize questions
 
   // Ensure uploads directory exists
   checkAndCreateUploadsDir();

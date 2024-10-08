@@ -20,7 +20,7 @@ This project is a backend service for an online examination system built using N
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/online-exam-backend.git
+   git clone https://github.com/saurabh0227/online-exam-backend.git
    cd online-exam-backend
    ```
 2. **Install dependencies**:
@@ -30,7 +30,7 @@ This project is a backend service for an online examination system built using N
 3. **Configure Environment Variables**:
    ```bash
    Create a .env file in the root directory with the following variables:
-   PORT=5000
+   PORT=3000
    DB_HOST=localhost
    DB_USER=root
    DB_PASSWORD=root_password
@@ -59,27 +59,3 @@ npm run dev
 Create Question: Send a POST request to /api/question with JSON data for multiple-choice or descriptive questions. For descriptive questions, an optional image can be uploaded.
 
 Retrieve Questions: Send a GET request to /api/exam to fetch a random selection of questions.
-
-## Project Structure
-
-online-exam-backend/
-├── src/
-│ ├── config/
-│ │ └── db.ts
-│ ├── controllers/
-│ │ └── questionController.ts
-│ ├── data/
-│ │ └── questionsData.ts
-│ ├── models/
-│ │ └── question.ts
-│ ├── routes/
-│ │ └── questionRoutes.ts
-│ ├── services/
-│ │ └── questionService.ts
-│ ├── app.ts
-│ └── server.ts
-├── .env
-├── Dockerfile
-├── docker-compose.yml
-├── package.json
-└── tsconfig.json

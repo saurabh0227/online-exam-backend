@@ -1,24 +1,10 @@
 import { Request, Response } from 'express';
 import { validationResult } from 'express-validator';
+
 import { QuestionService } from '../services/questionService';
 import { Question } from '../models/question';
 
 const questionService = new QuestionService();
-
-// export const createQuestion = async (
-//   req: Request,
-//   res: Response
-// ): Promise<void> => {
-//   const errors = validationResult(req);
-//   if (!errors.isEmpty()) {
-//     res.status(400).json({ errors: errors.array() });
-//     return;
-//   }
-
-//   const question: Question = req.body;
-//   await questionService.createQuestion(question);
-//   res.status(201).json({ message: 'Question created successfully' });
-// };
 
 export const createQuestion = async (
   req: Request,
